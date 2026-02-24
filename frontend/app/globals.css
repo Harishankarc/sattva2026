@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+
+:root {
+  --foreground:#590d22;
+    --background:#fdf0d5;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background:#fef9ef;
+    --foreground:#38040e;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@font-face {
+  font-family: 'Panchang-Bold';
+  src: url('/fonts/Panchang-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'new';
+  src: url('/frontend/assets/font/measseon.otf') format('otf');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'textfont';
+  src: url('/fonts/Urbanist-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+.perspective {
+  perspective: 1200px;
+}
+
+@font-face{
+  font-family:'eline-novika';
+  src: url('/fonts/eline-novika-font.zip') format("opentype");
+  font-weight: 700;
+  font-display:swap;
+}
+
+@font-face{
+  font-family:'hisyam';
+  src: url('/fonts/HisyamPersonalUseOnly.otf') format("opentype");
+  font-weight: 700;
+  font-display:swap;
+}
+
+@font-face{
+  font-family:'Astila-Regular';
+  src: url('/fonts/Astila-Regular.ttf') format("opentype");
+  font-weight: 700;
+  font-display:swap;
+}
+
+.alfa-slab-one-regular {
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Hide scrollbar for Chrome, Safari and Edge */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+html {
+  scrollbar-width: none;
+}
