@@ -19,7 +19,7 @@ interface DepartmentData {
 
 const DepartmentPoints = () => {
   const [mounted, setMounted] = useState(false);
-  const [activeView, setActiveView] = useState<'total' | 'arts' | 'sports'>('total');
+  const [activeView, setActiveView] = useState<'total' | 'arts' | 'sports'>('arts');
   const [sortedDepts, setSortedDepts] = useState<DepartmentData[]>([]);
 
   useEffect(() => {
@@ -201,16 +201,6 @@ const DepartmentPoints = () => {
 
           <div className="flex gap-3">
             <button
-              onClick={() => setActiveView('total')}
-              className={`toggle-btn px-6 py-3 rounded-full border-2 transition-all duration-300 ${activeView === 'total'
-                  ? 'bg-[#590d22] border-[#590d22] text-white'
-                  : 'bg-transparent border-white/20 text-white hover:border-[#590d22]/50'
-                }`}
-              style={{ fontFamily: 'textfont' }}
-            >
-              Total
-            </button>
-            <button
               onClick={() => setActiveView('arts')}
               className={`toggle-btn px-6 py-3 rounded-full border-2 transition-all duration-300 ${activeView === 'arts'
                   ? 'bg-[#590d22] border-[#590d22] text-white'
@@ -296,7 +286,7 @@ const DepartmentPoints = () => {
                 </div>
 
                 {/* Breakdown - Only show when total view is active */}
-                {activeView === 'total' && (
+                {/* {activeView === 'total' && (
                   <div className="grid grid-cols-2 gap-4 pt-4 border-t border-white/10">
                     <div>
                       <p className="text-xs uppercase tracking-wider text-white/40 mb-1" style={{ fontFamily: 'textfont' }}>
@@ -315,7 +305,7 @@ const DepartmentPoints = () => {
                       </p>
                     </div>
                   </div>
-                )}
+                )} */}
               </div>
 
               {/* Decorative Corner Element */}

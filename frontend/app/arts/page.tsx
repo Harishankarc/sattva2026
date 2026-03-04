@@ -26,7 +26,7 @@ const events = [
   },
   {
     'cat': 'THEATRE',
-    'events': [['MT', 'MONO ACT'], ['MY', 'MIMICRY'], ['MI', 'MIME'], ['SK', 'SKIT'], ['KP', 'KATHAPRASANGM'], ['D', 'DRAMA'], ['FAD', 'FANCY DRESS'], ['R', 'RAMP']]
+    'events': [['MT', 'MONO ACT'], ['MY', 'MIMICRY'], ['MI', 'MIME'], ['SK', 'SKIT'], ['KP', 'KATHAPRASANGM'], ['D', 'DRAMA'], ['FAD', 'FANCY DRESS'], ['R', 'RAMP'], ['WP', 'WALLPAINTING']]
   }
 ];
 

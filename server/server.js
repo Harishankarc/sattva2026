@@ -24,6 +24,7 @@ const querys = [
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         dept_code VARCHAR(50) UNIQUE NOT NULL,
         dept_name VARCHAR(255) NOT NULL,
+        is_sports INTEGER DEFAULT 0,
         is_active INTEGER DEFAULT 1,
         created_datetime DATETIME DEFAULT CURRENT_TIMESTAMP,
         modified_datetime DATETIME DEFAULT CURRENT_TIMESTAMP
@@ -159,7 +160,7 @@ app.delete('/deleteDepartment/:id', (req, res) => {
 
 app.get('/getAllArts', (req, res) => {
     const query = `
-        SELECT a.*, d.dept_code, d.dept_name
+        SELECT a.*, d.dept_code, d.dept_name, d.is_sports
         FROM arts a
         LEFT JOIN departments d ON a.dept_id = d.id
         WHERE a.is_active = 1
@@ -302,7 +303,7 @@ app.delete('/deleteArts/:id', (req, res) => {
 
 app.get('/getAllSports', (req, res) => {
     const query = `
-        SELECT s.*, d.dept_code, d.dept_name
+        SELECT s.*, d.dept_code, d.dept_name, d.is_sports
         FROM sports s
         LEFT JOIN departments d ON s.dept_id = d.id
         WHERE s.is_active = 1
