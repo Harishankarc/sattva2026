@@ -225,7 +225,7 @@ const DepartmentPoints = () => {
       </div>
 
       {/* Department Cards Grid */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {sortedDepts.map((dept, index) => {
           const currentPoints =
             activeView === 'total' ? dept.totalPoints :
@@ -239,21 +239,18 @@ const DepartmentPoints = () => {
               className="dept-card relative bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-500 group overflow-hidden"
               style={{ fontFamily: 'textfont' }}
             >
-              {/* Rank Badge */}
               <div className="absolute top-6 right-6 w-12 h-12 rounded-full bg-[#590d22] flex items-center justify-center">
                 <span className="text-white font-bold text-lg" style={{ fontFamily: 'textfont' }}>
                   {index + 1}
                 </span>
               </div>
 
-              {/* Department Short Name - Large Background */}
               <div className="absolute top-1/2 right-4 -translate-y-1/2 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
                 <h2 className="text-9xl font-bold" style={{ fontFamily: 'Astila-Regular', color: dept.color }}>
                   {dept.shortName}
                 </h2>
               </div>
 
-              {/* Content */}
               <div className="relative z-10">
                 <h3 className="text-xl font-bold text-[#fef9ef] mb-2 tracking-wider" style={{ fontFamily: 'textfont' }}>
                   {dept.name}
@@ -262,7 +259,6 @@ const DepartmentPoints = () => {
                   {dept.shortName}
                 </p>
 
-                {/* Points Display */}
                 <div className="mb-6">
                   <div className="flex items-end gap-2 mb-2">
                     <span className="text-5xl font-bold text-[#fef9ef]" style={{ fontFamily: 'textfont' }}>
@@ -273,7 +269,6 @@ const DepartmentPoints = () => {
                     </span>
                   </div>
 
-                  {/* Progress Bar */}
                   <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden">
                     <div
                       className="h-full rounded-full transition-all duration-1000 ease-out"
@@ -285,30 +280,9 @@ const DepartmentPoints = () => {
                   </div>
                 </div>
 
-                {/* Breakdown - Only show when total view is active */}
-                {/* {activeView === 'total' && (
-                  <div className="grid grid-cols-2 gap-4 pt-4 border-t border-white/10">
-                    <div>
-                      <p className="text-xs uppercase tracking-wider text-white/40 mb-1" style={{ fontFamily: 'textfont' }}>
-                        Arts
-                      </p>
-                      <p className="text-2xl font-bold text-[#fef9ef]" style={{ fontFamily: 'textfont' }}>
-                        {dept.artsPoints}
-                      </p>
-                    </div>
-                    <div>
-                      <p className="text-xs uppercase tracking-wider text-white/40 mb-1" style={{ fontFamily: 'textfont' }}>
-                        Sports
-                      </p>
-                      <p className="text-2xl font-bold text-[#fef9ef]" style={{ fontFamily: 'textfont' }}>
-                        {dept.sportsPoints}
-                      </p>
-                    </div>
-                  </div>
-                )} */}
+
               </div>
 
-              {/* Decorative Corner Element */}
               <div className="absolute bottom-0 left-0 w-24 h-24 opacity-10">
                 <div
                   className="absolute bottom-0 left-0 w-full h-full rounded-tr-full"
@@ -318,8 +292,15 @@ const DepartmentPoints = () => {
             </div>
           );
         })}
-      </div>
+      </div> */}
       {/* Decorative Element */}
+      <div>
+        <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+          <p className="text-[2vw] font-bold  origin-center text-white" style={{ fontFamily: 'Astila-Regular' }}>
+            results will be announced soon
+          </p>
+        </div>
+      </div>
       <div className="fixed top-1/2 right-0 -translate-y-1/2 opacity-5 pointer-events-none">
         <p className="text-[20vw] font-bold rotate-90 origin-center text-[#590d22]" style={{ fontFamily: 'Astila-Regular' }}>
           SATTVA

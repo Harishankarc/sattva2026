@@ -3,7 +3,7 @@ import axios from "axios";
 class API {
   constructor() {
     this.client = axios.create({
-      baseURL: "http://localhost:5000",
+      baseURL: "https://api.sattva2026.site",
       timeout: 20000,
       headers: {
         "Content-Type": "application/json",
