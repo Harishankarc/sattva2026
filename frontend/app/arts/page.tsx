@@ -22,11 +22,11 @@ const events = [
   },
   {
     'cat': 'DANCE',
-    'events': [['SD', 'SOLO DANCE FOLK'], ['AT', 'ADAPT TUNE'], ['VP', 'VATTAPPATU'], ['OF', 'OPPANA FEMALE'], ['KK', 'KOLKALI'], ['TH', 'THIRUVATHIRA'], ['SS', 'STEP IN SYNCHRO'], ['VC', 'VIDEO CHOREOGRAPHY'], ['NO', 'NOSTALGIA'], ['WD', 'WESTERN GROUP DANCE'], ['GD', 'EASTERN GROUP DANCE'], ['MOH', 'MOHINIYATTAM'], ['BM', 'BHARATHANATTYAM (M)'], ['BF', 'BHARATHANATTYAM (F)'], ['KPF', 'KUCHIPPUDI (F)'], ['KPM', 'KUCHIPPUDI (M)'], ['MGK', 'MARGAMKALI'], ['FU', 'FUSION'], ['DFF', 'DUFFMUTTU']]
+    'events': [['SD', 'SOLO DANCE FOLK'], ['AT', 'ADAPT TUNE'], ['VP', 'VATTAPPATU'], ['OF', 'OPPANA FEMALE'], ['KK', 'KOLKALI'], ['TH', 'THIRUVATHIRA'], ['SS', 'STEP IN SYNCHRO'], ['VC', 'VIDEO CHOREOGRAPHY'], ['NO', 'NOSTALGIA'], ['WD', 'WESTERN GROUP DANCE'], ['GD', 'EASTERN GROUP DANCE'], ['MOH', 'MOHINIYATTAM'], ['BM', 'BHARATHANATTYAM (M)'], ['BF', 'BHARATHANATTYAM (F)'], ['KPF', 'KUCHIPPUDI (F)'], ['KPM', 'KUCHIPPUDI (M)'], ['MGK', 'MARGAMKALI'], ['FU', 'FUSION'], ['DFF', 'DUFFMUTTU'], ['CD','CINEMATIC DANCE']]
   },
   {
     'cat': 'THEATRE',
-    'events': [['MT', 'MONO ACT'], ['MY', 'MIMICRY'], ['MI', 'MIME'], ['SK', 'SKIT'], ['KP', 'KATHAPRASANGM'], ['D', 'DRAMA'], ['FAD', 'FANCY DRESS'], ['R', 'RAMP'], ['WP', 'WALLPAINTING']]
+    'events': [['MT', 'MONO ACT'], ['MY', 'MIMICRY'], ['MI', 'MIME'], ['SK', 'SKIT'], ['KP', 'KATHAPRASANGM'], ['D', 'DRAMA'], ['FAD', 'FANCY DRESS'], ['R', 'RAMP'], ['WP', 'WALLPAINTING'], ['ST', 'STAGE TABLEAU']]
   }
 ];
 

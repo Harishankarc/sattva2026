@@ -225,7 +225,7 @@ const DepartmentPoints = () => {
       </div>
 
       {/* Department Cards Grid */}
-      {/* <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {sortedDepts.map((dept, index) => {
           const currentPoints =
             activeView === 'total' ? dept.totalPoints :
@@ -292,15 +292,9 @@ const DepartmentPoints = () => {
             </div>
           );
         })}
-      </div> */}
-      {/* Decorative Element */}
-      <div>
-        <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-          <p className="text-[2vw] font-bold  origin-center text-white" style={{ fontFamily: 'Astila-Regular' }}>
-            results will be announced soon
-          </p>
-        </div>
       </div>
+      {/* Decorative Element */}
+
       <div className="fixed top-1/2 right-0 -translate-y-1/2 opacity-5 pointer-events-none">
         <p className="text-[20vw] font-bold rotate-90 origin-center text-[#590d22]" style={{ fontFamily: 'Astila-Regular' }}>
           SATTVA
